@@ -1,6 +1,376 @@
 <!DOCTYPE html>
-<html>
-    <body>
-        <h1>hi</h1>
-    </body>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ethan Puig | Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav id="navbar">
+    <div class="container">
+      <div class="nav-content">
+        <a href="#" class="logo">
+          <span class="logo-accent">E</span>Puig
+        </a>
+        <div class="desktop-nav">
+          <a href="#about">About</a>
+          <a href="#education">Education</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#experience">Experience</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <button class="mobile-menu-toggle" aria-label="Toggle menu">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="menu-icon">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="close-icon hidden">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <div class="mobile-nav hidden">
+      <div class="container">
+        <div class="mobile-nav-links">
+          <a href="#about">About</a>
+          <a href="#education">Education</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#experience">Experience</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <canvas id="hexagon-background"></canvas>
+    <div class="container">
+      <div class="hero-content">
+        <h1 class="gradient-text">Ethan Puig</h1>
+        <h2>Cybersecurity Engineering Student</h2>
+        <p>Combining technical expertise with a passion for problem-solving</p>
+        <div class="hero-buttons">
+          <a href="#contact" class="btn btn-primary">Contact Me</a>
+          <a href="#projects" class="btn btn-secondary">View Projects</a>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <a href="#about">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M12 5v14M5 12l7 7 7-7"/>
+        </svg>
+      </a>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="section bg-dark">
+    <div class="container">
+      <div class="about-content">
+        <div class="about-image">
+          <div class="image-glow"></div>
+          <div class="image-container">
+            <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+              <circle cx="12" cy="7" r="4"></circle>
+            </svg>
+          </div>
+        </div>
+        <div class="about-text">
+          <h2 class="section-title">About Me</h2>
+          <p>I'm a Cybersecurity Engineering student at Florida Polytechnic University with a passion for technology and problem-solving. My academic journey has equipped me with a strong foundation in programming, cryptography, and digital systems.</p>
+          <p>When I'm not coding or studying, I'm competing with Florida Polytechnic University's Esports Rocket League team, where I've developed strong teamwork and communication skills.</p>
+          <p>I'm seeking opportunities to apply my technical skills in real-world environments and continue growing as a cybersecurity professional.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education Section -->
+  <section id="education" class="section bg-darker">
+    <div class="container">
+      <h2 class="section-title centered">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon">
+          <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+          <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+        </svg>
+        Education
+      </h2>
+      <div class="education-grid">
+        <div class="card">
+          <h3>Florida Polytechnic University</h3>
+          <p class="subtitle">Bachelor of Science in Cybersecurity Engineering</p>
+          <p class="date">Expected Graduation: December 2026</p>
+          <p>Cumulative GPA: 3.0</p>
+          <h4>Relevant Coursework:</h4>
+          <p>Engineering Skills and Design I & II, Digital Logic Design, Applied Cryptography, Object Oriented Programming, Circuits I, Digital Electronics, Computer Architecture & Organization</p>
+        </div>
+        <div class="card">
+          <h3>Broward College</h3>
+          <p class="subtitle">Associates of Arts in Computer Science</p>
+          <p>Cumulative GPA: 3.2</p>
+          <h4>Relevant Coursework:</h4>
+          <p>Calculus I/II/III, Intro to Comp. Prog., Physics I/II, Comp. Literacy, Excel Data Analysis</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="section bg-dark">
+    <div class="container">
+      <h2 class="section-title centered">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon">
+          <polyline points="16 18 22 12 16 6"></polyline>
+          <polyline points="8 6 2 12 8 18"></polyline>
+        </svg>
+        Technical Skills
+      </h2>
+      <div class="skills-container">
+        <h3>Programming Languages</h3>
+        <div class="skill-badges">
+          <div class="skill-badge">C</div>
+          <div class="skill-badge">C++</div>
+          <div class="skill-badge">C#</div>
+          <div class="skill-badge">Python</div>
+          <div class="skill-badge">MATLAB</div>
+          <div class="skill-badge">MIPS/Assembly</div>
+        </div>
+        <h3>Tools & Frameworks</h3>
+        <div class="skill-badges">
+          <div class="skill-badge">Tkinter</div>
+          <div class="skill-badge">Flipper Zero</div>
+          <div class="skill-badge">Tektronix MDO3104 Oscilloscope</div>
+          <div class="skill-badge">Tinkercad</div>
+          <div class="skill-badge">Multisim</div>
+          <div class="skill-badge">SOLIDWORKS</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="section bg-darker">
+    <div class="container">
+      <h2 class="section-title centered">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon">
+          <path d="M2 3h20"></path>
+          <path d="M21 3v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V3"></path>
+          <path d="m7 21 5-5 5 5"></path>
+        </svg>
+        Projects
+      </h2>
+      <div class="projects-grid">
+        <div class="card">
+          <h3>Password Manager</h3>
+          <p class="tech">Python, Tkinter</p>
+          <p class="date">March 2024 - April 2024</p>
+          <ul>
+            <li>Developed a Python-based password manager that securely stores and manages usernames and passwords, allowing users to add, retrieve, and view stored credentials efficiently.</li>
+            <li>Implemented user-friendly functionality for viewing all saved credentials and deleting specific entries with a single action.</li>
+            <li>Enhanced applied proficiency in data storage and password management, highlighting the importance of protecting sensitive information.</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Synchronous Stopwatch Circuit</h3>
+          <p class="tech">Tinkercad, Multisim, Tektronix MDO3104 Oscilloscope</p>
+          <p class="date">May 2024 - June 2024</p>
+          <ul>
+            <li>Collaborated with a partner to design and implement a fully functional stopwatch using multiple tools and software, displaying numbers from 1 to 60 across three breadboards with precise pin alignment.</li>
+            <li>Coordinated regular meetings to refine the design, ultimately delivering a working stopwatch through a process of consistent collaboration and problem-solving.</li>
+            <li>Conducted iterative testing and troubleshooting over the course of a month to overcome technical challenges and ensure the correct functionality of the circuit.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section id="experience" class="section bg-dark">
+    <div class="container">
+      <h2 class="section-title centered">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon">
+          <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+          <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+        </svg>
+        Experience
+      </h2>
+      <div class="experience-container">
+        <div class="card">
+          <h3>Customer Service Manager</h3>
+          <p class="subtitle">McDonald's Fast Food Chain</p>
+          <div class="card-meta">
+            <p>Pembroke Pines, FL</p>
+            <p>Aug 2022 - July 2023</p>
+          </div>
+          <ul>
+            <li>Led a team of customer service associates, fostering a culture of exceptional service and efficiency and ensuring the highest levels of customer satisfaction by resolving inquiries, handling complaints, and exceeding service standards</li>
+            <li>Implemented and monitored training programs to improve staff performance, resulting in a 20% increase in order accuracy</li>
+            <li>Managed inventory and supply orders to maintain stock levels and minimize waste, reducing costs by 10%</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Crew Member</h3>
+          <p class="subtitle">McDonald's Fast Food Chain</p>
+          <div class="card-meta">
+            <p>Pembroke Pines, FL</p>
+            <p>Dec 2020 - July 2022</p>
+          </div>
+          <ul>
+            <li>Worked collaboratively within a fantastic team under the guidance of four different managers, where I dedicated my full-time efforts to honing valuable skills applicable to the broader professional landscape</li>
+            <li>Maintained a record of consistent punctuality and attendance, ensuring reliable support for the team and dependable service to customers</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Organizations Section -->
+  <section id="organizations" class="section bg-darker">
+    <div class="container">
+      <h2 class="section-title centered">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon">
+          <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+          <circle cx="9" cy="7" r="4"></circle>
+          <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+          <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+        </svg>
+        Organizations
+      </h2>
+      <div class="organizations-grid">
+        <div class="card">
+          <h3>Chief of Staff Intern/Founding Member</h3>
+          <p class="subtitle">Society of Professional Engineers (SHPE), Florida Polytechnic University Chapter</p>
+          <p class="date">Lakeland, FL | Aug 2023 - Present</p>
+          <ul>
+            <li>Help founded the University chapter directing its inaugural year as a member</li>
+            <li>Served as a founding member, which was instrumental in driving the organization's early growth by leading awareness initiatives with the university community, contributing to its expansion into a dynamic group of 25+ committed members</li>
+            <li>Collaborated with the founding members to secure increased funding, enabling the expansion of budgets for on and off campus events</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Rocket League Team Player</h3>
+          <p class="subtitle">Florida Polytechnic University Esports</p>
+          <p class="date">Lakeland, FL | Aug 2024 - Present</p>
+          <ul>
+            <li>Proficient in collaborative gameplay within a team of three, consistently demonstrating effective communication and a shared commitment to achieving victory through cohesive teamwork</li>
+            <li>Dedicated participation in weekly tournaments necessitates ongoing team coordination, rigorous practice, and meticulous event planning</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section bg-dark">
+    <div class="container">
+      <h2 class="section-title centered">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon">
+          <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+          <polyline points="22,6 12,13 2,6"></polyline>
+        </svg>
+        Contact Me
+      </h2>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <h3>Get In Touch</h3>
+          <p>I'm currently looking for new opportunities to apply my skills and knowledge. Whether you have a question or just want to say hi, I'll try my best to get back to you!</p>
+          <div class="contact-methods">
+            <div class="contact-method">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+              <a href="mailto:EPuig0430@gmail.com">EPuig0430@gmail.com</a>
+            </div>
+            <div class="contact-method">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+              </svg>
+              <span>954-644-0214</span>
+            </div>
+            <div class="contact-method">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+              </svg>
+              <span>Lakeland, FL</span>
+            </div>
+            <div class="contact-method">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                <rect x="2" y="9" width="4" height="12"></rect>
+                <circle cx="4" cy="4" r="2"></circle>
+              </svg>
+              <a href="https://www.linkedin.com/in/ethan-puig/" target="_blank" rel="noopener noreferrer">linkedin.com/in/ethan-puig</a>
+            </div>
+            <div class="contact-method">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+              </svg>
+              <a href="https://github.com/Plut0nium94" target="_blank" rel="noopener noreferrer">github.com/Plut0nium94</a>
+            </div>
+          </div>
+        </div>
+        <div class="contact-form-container">
+          <form id="contact-form">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+            <div id="form-status" class="hidden"></div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>© <span id="current-year"></span> Ethan Puig. All rights reserved.</p>
+      <div class="social-links">
+        <a href="https://www.linkedin.com/in/ethan-puig/" target="_blank" rel="noopener noreferrer">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+            <rect x="2" y="9" width="4" height="12"></rect>
+            <circle cx="4" cy="4" r="2"></circle>
+          </svg>
+        </a>
+        <a href="https://github.com/Plut0nium94" target="_blank" rel="noopener noreferrer">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+          </svg>
+        </a>
+        <a href="mailto:EPuig0430@gmail.com">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+            <polyline points="22,6 12,13 2,6"></polyline>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
 </html>
